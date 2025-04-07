@@ -73,8 +73,6 @@ Email: david.garcia@uni-konstanz.de
 
 ## 3. About this Course
 
-## 4. Appendix: Research examples
-
 ---
 
 background-image: url(Buildings.svg)
@@ -134,8 +132,6 @@ background-size: 97%
 ## *2. Social Media Data Science*
 
 ## 3. About this Course
-
-## 4. Appendix: Research examples
 
 ---
 
@@ -290,8 +286,6 @@ Deep Thought, from the movie version of The Hitchhiker's Guide to the Galaxy.
 
 ## *3. About this Course*
 
-## 4. Appendix: Research examples
-
 ---
 
 # Course objectives
@@ -382,14 +376,13 @@ After this course, you should be able to:
 
 ---
 
-# 4. Appendix: Research examples
+# Emerging topics brainstorming
 
-## 1. Introduction to Social Data Science Lab
+## What emerging topics or methods would you like to learn about?
 
-## 2. Social Media Data Science
-
-## 3. About this Course
-
-## *4. Appendix: Research examples*
+- Any new platforms?
+- New social issues or problems?
+- New methods?
+- Any paper or project that you found inspiring?
 
 ---
