@@ -37,6 +37,7 @@ layout: true
 
 ---
 
+
 # About me
 
 .pull-left[
@@ -50,7 +51,7 @@ knitr::include_graphics("Profile.jpg")
 <br>
 Website: [dgarcia.eu](https://dgarcia.eu)
 
-Twitter: [@dgarcia_eu](https://twitter.com/dgarcia_eu)
+Bluesky: [@dgarcia.eu](https://bsky.app/profile/dgarcia.eu)
 
 Github: [dgarcia-eu](https://github.com/dgarcia-eu)
 
@@ -59,9 +60,21 @@ Email: david.garcia@uni-konstanz.de
 
 - Professor for Social and Behavioral Data Science, University of Konstanz
 - Faculty member of the Complexity Science Hub Vienna
-- Privatdozent at ETH Zurich and TU Graz
+- External faculty at the Barcelona Super Computing Center
+- Privatdozent at ETH Zurich
 
 ---
+
+# Today's agenda
+
+## 1. Introduction to Social Data Science Lab
+
+## 2. Social Media Data Science
+
+## 3. About this Course
+
+---
+
 background-image: url(Buildings.svg)
 background-size: 97%
 # A bit more about me
@@ -74,6 +87,8 @@ background-size: 97%
 ]
 
 ---
+
+
 background-image: url(AboutUS.svg)
 background-size: 98%
 
@@ -109,101 +124,17 @@ background-size: 97%
 
 ---
 
-# Course objectives
 
-After this course, you should be able to:
-- understand a wide variety of techniques to retrieve **digital trace data from online platforms**
-- store, process, and summarize online data for **quantitative analysis**
-- perform **statistical analyses** to test hypotheses, derive insights, and formulate predictions
-- **interpret** the results of data analysis with respect to testable **theories of human behavior**
-- understand the **limitations** of observational data analysis with respect to data volume, statistical power, and external validity
+# Social Media Data Science
 
----
+## 1. Introduction to Social Data Science Lab
 
-# Course topics
+## *2. Social Media Data Science*
 
-### Block 1: Introduction
-- Introduction to social media data analysis within social data science
-- Algorithms and digital traces: The case of Google trends
-- Ethics and privacy in social media data analysis
-- Exercise 1: Future orientation and search
-
-### Block 2: Social dynamics
-- Social trends and the Simmel effect
-- Social impact theory and its application to social media
-- Exercise 2: Testing the division of impact hypothesis in social media
+## 3. About this Course
 
 ---
 
-# Course topics
-
-### Block 3: Text in social media
-- Dictionary methods in social media data analysis
-- Supervised social media text analysis
-- The measurement of meaning in social media
-- Exercise 3: Validating sentiment analysis for social media text
-
-### Block 4: Networks in social media
-- Introduction to social networks and the friendship paradox
-- Centrality measures in online social networks
-- Communities and assortativity in social media
-- Exercise 4: Political assortativity on Twitter
-
-
----
-
-# Exercises and practical sessions
-
-- Exercise practical sessions are provided over the semester
-- Time and place: Thursdays at 10:00, room H303
-- Your tutor will be Aron Sarmany, he will co-teach tutorials with me
-
-
-- Assignments will be released on Thursdays before the tutorial
-- The deadline is before a tutorial a few weeks later
-- Assignment submissions through Github as in ICSS
-- **Assignments count 40% of the final grade of the course** (10% each)
-
-  - Exercise 1: Future orientation and search
-  - Exercise 2: Testing the division of impact hypothesis in social media
-  - Exercise 3: Validating sentiment analysis for social media text
-  - Exercise 4: Political assortativity on Twitter
-
----
-
-# Learning materials and evaluation
-
-- Github materials: https://github.com/dgarcia-eu/SocialMediaDataAnalysis
-  - The frontpage contains announcements and links to lecture slides
-  - Over the semester it will be populated with written handouts
-- Course Ilias for lecture:  
-https://ilias.uni-konstanz.de/goto_ILIASKONSTANZ_crs_1559947.html
-- Course Ilias for tutorials:  
-https://ilias.uni-konstanz.de/goto_ILIASKONSTANZ_crs_1559949.html
-
-- Final evaluation based on:
-  - Written exam (60%) - tentative dates: 25.07 and 10.10
-  - Exercise assignments (40%) - each with its own grade worth 10%
-  - **Questions?**
-
----
-
-
-# Related courses
-
-- **Introduction to Computation for the Social Sciences**
-  - Previous semester prerequisite. You should have taken it, otherwise talk to other students to learn the how to of that course, especially exercises
-- **Current Topics and Projects in Social Data Science**
-  - Additional seminar to discuss current research and develop projects building on this course and ICSS
-  - Thursdays after tutorial in the same room
-- **Network Science of Online Interaction**
-  - Seminar with exercises focusing on network science methods
-  - Includes introduction to network science and data analysis projects
-  - Good alternative to this course
-- Other courses: Colloquium as a preparation for a Master Thesis, Data Science Projects, and Computational Modelling of Social Systems seminar during the Winter Semester
-
-
----
 
 # What is social media?
 
@@ -255,7 +186,7 @@ to show whether government policies were working."
 ---
 
 
-# What is the aim of Social Data Science?
+## Social Media as a data in Social Data Science
 
 > The aim of Social Data Science is   
 **the Quantitative Understanding of Human Behavior**.  
@@ -271,9 +202,7 @@ to show whether government policies were working."
 ---
 #  How are we going to do it?
 **Retrieving, processing, analyzing, and interpreting social media data.**  
-<center>
-![:scale 80%](FBMap.png)
-</center>
+.center[![:scale 50%](Net.png)  ]
 ---
 
 # What is data?
@@ -348,6 +277,93 @@ Deep Thought, from the movie version of The Hitchhiker's Guide to the Galaxy.
 
 ---
 
+
+# About this Course
+
+## 1. Introduction to Social Data Science Lab
+
+## 2. Social Media Data Science
+
+## *3. About this Course*
+
+---
+
+# Course objectives
+
+After this course, you should be able to:
+- understand a wide variety of techniques to retrieve **digital trace data from online platforms**
+- store, process, and summarize online data for **quantitative analysis**
+- perform **statistical analyses** to test hypotheses, derive insights, and formulate predictions
+- **interpret** the results of data analysis with respect to testable **theories of human behavior**
+- understand the **limitations** of observational data analysis with respect to data volume, statistical power, and external validity
+
+---
+
+# Course topics
+
+### Block 1: Introduction
+- Introduction to social media data analysis within social data science
+- Algorithms and digital traces: The case of Google trends
+- Ethics and privacy in social media data analysis
+- Exercise 1: Future orientation and search
+
+### Block 2: Social dynamics
+- Social impact theory and its application to social media
+- Social trends and the Simmel effect
+- Exercise 2: Testing the division of impact hypothesis in social media
+
+---
+
+# Course topics
+
+### Block 3: Text in social media
+- Dictionary methods in social media data analysis
+- Supervised social media text analysis
+- The measurement of meaning in social media
+- Exercise 3: Validating sentiment analysis for social media text
+
+### Block 4: Networks in social media
+- Introduction to social networks and the friendship paradox
+- Centrality measures in online social networks
+- Communities and assortativity in social media
+- Social issues on social media
+- Exercise 4: Political assortativity on Twitter
+
+
+---
+
+# Exercises and practical sessions
+
+- Time and place: Wednesdays at 13:30, room E402
+- Your tutor will be Elena Solar, some tutorials will be co-teach with me
+- Assignments will be released on Wednesday before the tutorial
+- The deadline is before a tutorial a few weeks later
+- Assignment submissions through Github as in ICSS
+- **Each assignments counts 25% of the final tutorial grade (3 ECTS)**
+
+- Assignments will be posted and submitted through Github Classroom
+  - Talk to Elena Solar to be invited to the repositories
+  - We will set up a forum for course discussions and Q&A
+
+---
+
+# Learning materials and evaluation
+
+- Github materials: https://github.com/dgarcia-eu/SocialMediaDataAnalysis
+  - The frontpage contains announcements and links to lecture slides
+  - Over the semester it will be populated with written handouts
+
+
+  - Assignments will be posted and submitted through Github Classroom
+- **Assignments are essential to be able to do the project and pass the Lecture**
+- **I don't recommend taking only the lecture part without tutorials unless you did the tutorials last year**
+
+
+- Lecture part is graded based on project reports
+  - You can pitch your project and get feedback during the last session (16.07) but only the report is evaluated
+  - More information on project guidance and evaluation criteria later 
+
+---
 # Summary
 
 - In this course, you will learn how to retrieve, analyze, and interpret social media data
@@ -358,6 +374,17 @@ Deep Thought, from the movie version of The Hitchhiker's Guide to the Galaxy.
 
 - Emphasis on critique and understanding of limitations and potentials
 
-- Join us for the first tutorial on Thursday at 10:00!
+- Join us for the first tutorial on later today!
 
-- Questions?
+- **Questions?**
+
+---
+
+# Emerging topics brainstorming
+
+## What emerging topics or methods would you like to learn about?
+
+- Any new platforms?
+- New social issues or problems?
+- New methods?
+- Any paper or project that you found inspiring?
