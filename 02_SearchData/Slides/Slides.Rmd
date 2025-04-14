@@ -38,6 +38,16 @@ layout: true
 
 ---
 
+# Announcements
+
+- This year we won't use Discord for discussions  
+(ignore older version of these slides)
+
+- We will use the forum on Github: 
+
+## https://github.com/SMDA-2025/forum/discussions
+
+---
 
 # Outline
 
