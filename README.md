@@ -25,6 +25,7 @@ full professor TU Graz in 2020 and then at the University of Konstanz in 2022. T
 
 The course is organized in lecture blocks with one practical exercise for each one. In the exercises you will apply part of what you 
 have learned in the block. In exercises, you collect your own data to answer research questions. 
+You can find the course forum here: https://github.com/SMDA-2025/forum/discussions
 
 ### Block 1: Introduction
 1. **Introduction to social media data analysis within social data science** -- [[Slides]](https://dgarcia-eu.github.io/SocialMediaDataAnalysis/01_Introduction/Slides/Slides.html) -- 9.04.2025  
