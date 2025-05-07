@@ -136,23 +136,6 @@ lines(total, lwd=2, col="red")
 legend("topleft",legend=c(name1, name2), col=c("black","red"), lwd=2, cex=3)
 ```
 
-
----
-
-# The QWERTY effect in baby names
-
-The QWERTY effect is a hypothesis in Psychology that postulates that words that are written with more right-hand letters of the keyboard are, on average, more positive than words that are written with more left-hand letters of the keyboard. The fraction of right-hand letters in US baby names has been increasing:
-```{r, message=F, results='hide', fig.width=14, fig.height=5, echo=F, cache=T, fig.align='center'}
-library(stringr)
-df %>% group_by(name,year) %>% summarize(count=sum(count)) %>% filter(year>1960)-> ngdf
-
-df$R <- str_count(pattern='[yuiophjklnm]',tolower(df$name))
-df$L <- str_count(pattern='[qwertasdfgzxcvb]',tolower(df$name))
-
-df %>% group_by(year) %>% summarize(RSA = sum(count *(R-L)), n=sum(count)) %>% filter(year>=1960)-> RSAdf
-par(mar=c(4.5,4.5,1.5,0))
-plot(RSAdf$year, RSAdf$RSA/RSAdf$n, type="l", lwd=2, xlab="year", ylab="mean RSA", cex.lab=2, cex.axis=2)
-```
 ---
 
 # Wacky baby name research
@@ -172,6 +155,46 @@ model <- lm(nnames~Earth.s.surface, data=sdf, subset=gender=="F")
 abline(model$coefficients[1], model$coefficients[2], col="pink")
 ```
 A parody paper titled ["We are entering an unprecedented age in baby name flux"](https://instsci.org/h7.html) reported; "baby name diversity also seems to have risen with the increasing annual temperature of the US (i.e., climate change)". 
+
+---
+
+# The QWERTY effect in baby names
+
+The QWERTY effect is a hypothesis in Psychology that postulates that words that are written with more right-hand letters of the keyboard are, on average, more positive than words that are written with more left-hand letters of the keyboard. The fraction of right-hand letters in US baby names has been increasing:
+```{r, message=F, results='hide', fig.width=14, fig.height=5, echo=F, cache=T, fig.align='center'}
+library(stringr)
+df %>% group_by(name,year) %>% summarize(count=sum(count)) %>% filter(year>1960)-> ngdf
+
+df$R <- str_count(pattern='[yuiophjklnm]',tolower(df$name))
+df$L <- str_count(pattern='[qwertasdfgzxcvb]',tolower(df$name))
+
+df %>% group_by(year) %>% summarize(RSA = sum(count *(R-L)), n=sum(count)) %>% filter(year>=1960)-> RSAdf
+par(mar=c(4.5,4.5,1.5,0))
+plot(RSAdf$year, RSAdf$RSA/RSAdf$n, type="l", lwd=2, xlab="year", ylab="mean RSA", cex.lab=2, cex.axis=2)
+```
+---
+
+# The QWERTY effect on the Web
+
+![](QWERTYWEB1.png)
+
+[The QWERTY effect on the web: How typing shapes the meaning of words in online human-computer interaction. David Garcia, Markus Strohmaier.  Proceedings of the World Wide Web conference (WWW) (2016)](https://dl.acm.org/doi/10.1145/2872427.2883019)
+
+---
+
+# RSA versus evaluation
+
+![](QWERTYWEB2.png)
+
+
+[The QWERTY effect on the web: How typing shapes the meaning of words in online human-computer interaction. David Garcia, Markus Strohmaier.  Proceedings of the World Wide Web conference (WWW) (2016)](https://dl.acm.org/doi/10.1145/2872427.2883019)
+
+---
+
+# Stability across confounders
+
+![](QWERTYWEB3.png)
+
 ---
 
 # The limits of baby name predictability
@@ -254,6 +277,7 @@ Exogenously triggered search volume after a tsunami (left) and endogenously driv
 
 ---
 
+
 # Exogenous versus endogenous bursts
 
 .center[![](EndoExo.png)]
@@ -294,6 +318,17 @@ Exogenously triggered search volume after a tsunami (left) and endogenously driv
 
 ---
 
+# Formalization of the end-exo model
+![](CS1.png)
+
+---
+
+# Endogenous subcritical
+
+.center[![](NS.png)]
+
+---
+
 # Endogenous subcritical
 
 .pull-left[
@@ -313,6 +348,11 @@ Exogenously triggered search volume after a tsunami (left) and endogenously driv
 
 # Endogenous critical
 
+.center[![](NC.png)]
+
+---
+# Endogenous critical
+
 .pull-left[
 - **Endogenous:** peak present without spikes
 - **Critical:** social influence stronger than novelty decay
@@ -329,6 +369,11 @@ Exogenously triggered search volume after a tsunami (left) and endogenously driv
 
 # Exogenous subcritical
 
+.center[![](XS.png)]
+
+---
+# Exogenous subcritical
+
 .pull-left[
 - **Exogenous:** peak as spike produced by an external event
 - **Subcritical:**  Social influence weaker than novelty decay
@@ -340,6 +385,13 @@ Exogenously triggered search volume after a tsunami (left) and endogenously driv
 .pull-right[.center[![:scale 70%](exogenSubcritical.png)]
   ![](ExoSub.png)]
   
+---
+
+
+# Exogenous critical
+
+.center[![](XC.png)]
+
 ---
 
 
