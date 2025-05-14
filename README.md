@@ -49,6 +49,7 @@ You can find the course forum here: https://github.com/SMDA-2025/forum/discussio
     - [Handout: Baby names research](https://dgarcia-eu.github.io/SocialMediaDataAnalysis/05_SocialTrends/BabyNameTrends/BabyNameTrends.html)
     - [Handout: Bootstrapping](https://dgarcia-eu.github.io/SocialMediaDataAnalysis/05_SocialTrends/Bootstrapping/Bootstrapping.html)
 6. **How to plan a social media data analysis project** - [[Slides]](https://dgarcia-eu.github.io/SocialMediaDataAnalysis/ProjectsGuidance/Slides.html) 14.05.2025
+    - [Papers list](https://tinyurl.com/mt9hu6wd)
 
 
 *Exercise 2: Testing the division of impact hypothesis in social media - Deadline 27.05.2025*
