@@ -37,8 +37,6 @@ layout: true
 <div class="my-footer"><span>David Garcia - Social Media Data Analysis</span></div> 
 
 ---
-.center[![:scale 85%](Sag2023.svg)]
----
 
 # Outline
 
