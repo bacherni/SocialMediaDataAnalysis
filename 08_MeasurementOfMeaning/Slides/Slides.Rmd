@@ -38,28 +38,15 @@ layout: true
 
 ---
 
-# Projects information for evaluation
-
-- **Course grading mode is changed to project-based evaluation**
-- Grade is still 40% exercises, 60% project work
-- Project grade is solely based on final project report
-- Based on replication/reproduction of a paper or an own research question
-- Projects timeline:
-  - Next week we will go more in detail into evaluation criteria, report parts, project examples, and have a Q&A during the lecture
-  - Over the next days, I will populate a document with examples of papers you can replicate/reproduce
-  - by 23.07 (**mandatory**): Writing a post on Ilias forum with the paper to replicate or research question and the plan to do so. 
-  - I will provide feedback on Ilias until 28.07. Questions are also welcome before that date - **prepare your project by the end of July**
-  - Tentative report submission deadline: 24.09
-
----
-
 # Outline
 
 ## 1. The semantic differential
 
 ## 2. Word embeddings
 
-## 3. Language models
+## 3. Language models for social media
+
+## 4. Emotion identification in social media text
 
 
 ---
@@ -155,7 +142,9 @@ The dimensions of the Semantic Differential (EPA):
 
 ## *2. Word embeddings*
 
-## 3. Language models
+## 3. Language models for social media
+
+## 4. Emotion identification in social media text
 
 ---
 
@@ -318,97 +307,330 @@ You don't need to fit your own word embeddings model, several alternatives exist
 - DDR outperforms word counting and performs best when applied on a smaller dictionary - larger dictionaries is not better in this case
 ---
 
+# Evidence and belief in political text
 
-# Language models
+.center[![:scale 90%](NHB.png)]
+
+---
+
+# DDR examples
+
+.center[![:scale 80%](NHB1.png)]
+
+---
+# Evidence and belief and misinformation
+
+.center[![:scale 100%](NHB3.png)]
+
+[From alternative conceptions of honesty to alternative facts in communications by US politicians. Lasser et al. Nature Human Behavior (2023)](https://www.nature.com/articles/s41562-023-01691-w)
+---
+
+# Language models for social media
 
 ## 1. The semantic differential
 
 ## 2. Word embeddings
 
-## *3. Language models*
+## *3. Language models for social media*
+
+## 4. Emotion identification in social media text
 
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 1)
-```
+
+# The Attention layer
+
+.center[![:scale 95%](Attention.png)]
+
+Speech and Language Processing. Daniel Jurafsky & James H. Martin (2023)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 2)
-```
+
+# The Transformer Block 
+
+.center[![:scale 58%](Transformer.png)]
+
+Speech and Language Processing. Daniel Jurafsky & James H. Martin (2023)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 3)
-```
+
+### BERT:  Bidirectional Encoder Representations from Transformers
+
+.center[![:scale 95%](BERT.png)]
+
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. Devlin et al (2018)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 4)
-```
+
+# More from BERT
+
+- Transformers are neural networks which use attention mechanism
+
+- A "large" language model (LM)
+  - Base with 12 Transformer layers (110 million parameters)
+  - Large with 24 Transformer layers (340 million parameters)
+
+- Trained on large collection of text: Wikipedia and BookCorpus
+
+- With several specialized hardware GPUs/TPUs
+
+- Examples of LMs based on Transformers: RoBERTa, XLNET, ELECTRA
+
+- Now: Examples of use of Transformers in social media analysis
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 5)
-```
+
+# Perspective API: Toxicity 
+
+.center[![:scale 90%](Perspective.png)]
+
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 6)
-```
+
+# About Perspective Toxicity models
+
+*We start by training multilingual BERT-based models on data from online forums. We then distill these models into single-language Convolutional Neural Networks (CNNs) for each language we support. Distillation ensures we can serve the models and produce scores within a reasonable amount of time.*
+
+.center[![:scale 50%](Jigsaw.png)]
+
+*Perspective’s main attribute is TOXICITY, defined as “a rude, disrespectful, or unreasonable comment that is likely to make you leave a discussion”.*
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 7)
-```
+
+## HuggingFace: Open source toxicity models
+
+.center[![:scale 80%](HF.png)]
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 8)
-```
+
+# Transformers for sentiment on tweets
+
+.center[![:scale 83%](HF2.png)]
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 9)
-```
+
+# Example: Suicide content detection
+
+.center[![:scale 75%](Suicide1.png)]
+
+[Detecting potentially harmful and protective suicide-related content on Twitter: A machine learning approach. Metzler et al. JMIR (2022)](https://www.jmir.org/2022/8/e34705)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 10)
-```
+
+# BERT results
+.center[![:scale 95%](Suicide3.png)]
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 11)
-```
+# Application to suicide statistics
+.center[![:scale 75%](Suicide4.png)]
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 12)
-```
+
+
+# Effects on calls to helpline
+.center[![:scale 87%](Suicide6.png)]
+
+[Association of 7 million+ tweets featuring suicide-related content with daily calls to the Suicide Prevention Lifeline and with suicides, United States, 2016–2018. Niederkrotenthaler et al (2022)](https://journals.sagepub.com/doi/abs/10.1177/00048674221126649)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 13)
-```
+
+
+# Effects on suicide statistics
+.center[![:scale 90%](Suicide5.png)]
+
+[Association of 7 million+ tweets featuring suicide-related content with daily calls to the Suicide Prevention Lifeline and with suicides, United States, 2016–2018. Niederkrotenthaler et al (2022)](https://journals.sagepub.com/doi/abs/10.1177/00048674221126649)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 14)
-```
+
+
+
+# Emotion identification in social media text
+
+## 1. The semantic differential
+
+## 2. Word embeddings
+
+## 3. Language models for social media
+
+## 4. Emotion identification in social media text
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 15)
-```
+
+
+## State-of-the-practice Sentiment Analysis Pipeline
+
+.left-column[
+![](figures/SA-pipeline.png)
+]
+
+.right-column[
+1. Create representative sample of documents from application case
+2. Crowdsource annotations (e.g. Mechanical Turk, FigureEight, students...)
+3. Split development/training/test samples from annotated documents
+4. Develop model using the development sample, evaluate on training sample with cross-validation
+5. Train final model on full train sample
+6. One evaluation run over test sample. Report performance versus a benchmark including other models and methods
+7. Apply model over rest of documents
+]
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 16)
+
+# Challenges in Emotion Identification
+
+```{r, echo=FALSE, out.width=950, fig.align='center'}
+knitr::include_graphics("figures/communication.png")
 ```
+
+Current sentiment analysis approaches assume that the **ground truth** is an annotation of emotions by **a reader**, often a student or a crowdsourcing worker
+
+Noise in ground truth creates **unmeasured error** and potential biases
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 17)
-```
+
+## Vent: Self-annotated Social Media Emotions
+
+![](figures/VentApp.png)
+<div style="font-size:18pt"><span>Lykousas, N., Patsakis, C., Kaltenbrunner, A., & Gómez. Sharing emotions at scale: The vent dataset. ICWSM (2019)</span></div> 
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 18)
-```
+
+### LEIA: Linguistic Embeddings for the Identification of Affect
+
+![](figures/Schema.png)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 19)
-```
+
+# Emotion-aware masking in pre-training
+
+![](figures/eMLM.svg)
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 20)
-```
+
+# Vent Datasets Summary
+
+</br>
+
+| Label        | Train            | Development    | User Test      | Time Test  | Random Test    |
+|--------------|:------------------:|:----------------:|:----------------:|:----------------:|:----------------:|
+| Sadness      | 1,712,985  | 199,890  | 262,999  | 293,993  | 264,906  |
+| Anger        | 1,517,282 | 147,778  | 224,997  | 205,598  | 226,068  |
+| Fear         | 1,341,624  | 138,929  | 198,264  | 185,461  | 201,563  |
+| Affection    | 979,019    | 144,175  | 161,018  | 191,022| 158,017  |
+| Happiness    | 795,363    | 74,369   | 118,290  | 91,127    | 116,647  |
+| **Total** | **6,346,273**        | **705,141**        | **965,568**        | **967,201**        |** 967,201 **       |
+
 ---
-```{r, echo=F}
-magick::image_read_pdf("Session08-part2-LM-LEIA.pdf", pages = 21)
-```
+
+# Out-Of-Domain Datasets
+
+- We gathered datasets of emotion annotations from previous research
+- We use only test samples to allow future benchmarks
+- enISEAR and UniversalJoy are reader-annotated. TEC similarly with \#-tags
+- Affection not present in OOD datasets
+- Not a hard test of generalizability but a way to explore other domains
+
+| Dataset       | Source |  Year  | Sadness | Anger | Fear | Happiness | Total |
+|---------------|---------|---------|:---------:|:-------:|:------:|:-----------:|:--------------:|
+| **enISEAR**       | Writing tasks | 2019   | 143     | 143   | 143  | 143       | 572          |
+| **TEC**           | Twitter #emo  | 2012   | 765     | 305   | 499  | 1,627     | 3,196        |
+| GoEmotions    | Reddit | 2020   | 259     | 520   | 77   | 1,598     | 2,454        |
+| **Universal Joy** | Facebook   | 2021 | 128     | 58    | 11   | 384       | 581          |
+| SemEval       | Twitter | 2018    | 312     | 511   | 165  | 706       | 1,694        |
+
+---
+
+# Results in Vent
+
+<center> ![:scale 100%](figures/LEIA1.svg) </center>
+
+LEIA outperforms supervised and unsupervised methods for all emotions and test datsets. $F_1$ values between 70 and 80.
+
+---
+
+# Out-of-domain results
+
+|               | LIWC               | NRC                | NBSVM              | LEIA-base          | LEIA-large         |
+|---------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Universal Joy | 23.45 | 28.98 | 41.70 | **54.18** | 54.17 |
+| GoEmotions    | 45.81 | 32.68 | 48.23 | **46.31** | 45.75 |
+| TEC           | 36.02 | 33.92 | 39.07 | 43.87 | **44.12** |
+| SemEval       | 66.72  | 49.86  | 68.77 | **71.68** | 70.04 |
+| enISEAR       | 23.51 | 42.72 | 55.33 | 70.37 | **79.94** |
+
+
+- LEIA is best or tied with the best in all out-of-domain tests
+- LEIA is best or tied with the best in all emotions except Fear in TEC
+- Note: very different media, sampling methods, and labelling schemes
+
+---
+
+# Comparing with GPT models
+|           | LEIA-base          | LEIA-large         | GPT-3.5            | GPT-4              |
+|-----------|--------------------|--------------------|--------------------|--------------------|
+| Affection | 74.48 | **75.67** | 41.38 | 37.43 |
+| Anger     | 72.92 | **72.98** | 61.79 | 66.82 |
+| Fear      | 69.01 | **70.26** | 51.55 | 60.86 |
+| Happiness | **77.69** | 77.58 | 67.69 | 68.70 |
+| Sadness   | 67.28 | **68.00** | 59.94  | 64.00 |
+| Average   | 72.28 | **72.90** | 56.47 | 59.56 |
+
+
+- Evaluation on a sample of 1000 texts per emotion label from the user test sample. GPT models used with a standard prompt for zero-shot classification
+- LEIA greatly outperforms GPT-3.5-turbo and GPT-4 in each emotion
+
+---
+
+# Comparing with GPT models (OOD)
+
+|               | LEIA-base          | LEIA-large         | GPT-3.5            | GPT-4              |
+|---------------|--------------------|--------------------|--------------------|--------------------|
+| Universal Joy | 54.18 | 54.17 | 52.89  | **56.43**  |
+| GoEmotions   |   46.31    |  45.75      |   **59.06**    |   56.45          |
+| TEC           | 43.87 | 44.12 | 52.66  | **54.82** |
+| SemEval       | 71.68 | 70.04 | 80.13  | **81.72** |
+| enISEAR       | 70.37 | 79.94 | 84.96 | **89.97** |
+
+- GPT models outperform LEIA in GoEmotions, TEC, SemEval, and enISEAR
+- LEIA en par with GPT for Universal Joy
+- Model contamination? test samples for all these datasets are public and GPT models could have been trained with them
+- Universal Joy might be younger than the cutoff date
+
+---
+
+# LEIA (versus) Humans
+
+.center[![:scale 90%](figures/LEIAvsHumans.svg)]
+- Students annotating a balanced Vent sample (N=100, 720 annotations)
+- Initial results suggest that LEIA is comparable to humans
+- **Artificial Affective Intelligence:** Can LEIA help humans read emotions?
+
+
+---
+
+# Error analysis with LIME
+
+.center[![:scale 77%](figures/LIME.png)]
+
+<a href="https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-023-00427-0"> LEIA: Linguistic Embeddings for the Identification of Affect. S. Aroyehun, L. Malik, H. Metzler, N. Haimerl, A. Di Natale, D. Garcia. EPJ Data Science (2023)</a>
+
+
+---
+
+# Summary
+
+- **Beginnings of the measurement of meaning**
+  - Dimensionality reduction in average ratings of associations
+  - Not only for words, also for images, fonts, anything with meaning
+  
+  
+- **Document as context: Latent Semantic Analysis**
+  - Problem of sparseness, highly computationally demanding
+
+
+- **Near words as context: Word embeddings**
+  - A solution to word counting: Distributed Dictionary Representations (DDR)
+  
+  
+- **The next level: Transformers**
+  - Wide applications: toxicity, suicide-related content, sentiment
+  - Example for emotions in social media text
+
 
